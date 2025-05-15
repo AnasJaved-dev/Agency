@@ -1,0 +1,46 @@
+@theme {
+  /* Breakpoint Sizes */
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Container Max Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+}
+
+@layer utilities {
+  /* Container Widths */
+  .container-sm { max-width: var(--container-sm); }
+  .container-md { max-width: var(--container-md); }
+  .container-lg { max-width: var(--container-lg); }
+  .container-xl { max-width: var(--container-xl); }
+  .container-2xl { max-width: var(--container-2xl); }
+
+  /* Responsive Breakpoints */
+  @media (min-width: var(--breakpoint-sm)) {
+    .sm\:container { max-width: var(--container-sm); }
+  }
+
+  @media (min-width: var(--breakpoint-md)) {
+    .md\:container { max-width: var(--container-md); }
+  }
+
+  @media (min-width: var(--breakpoint-lg)) {
+    .lg\:container { max-width: var(--container-lg); }
+  }
+
+  @media (min-width: var(--breakpoint-xl)) {
+    .xl\:container { max-width: var(--container-xl); }
+  }
+
+  @media (min-width: var(--breakpoint-2xl)) {
+    .\2xl\:container { max-width: var(--container-2xl); }
+  }
+} 

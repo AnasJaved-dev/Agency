@@ -1,0 +1,41 @@
+@theme {
+  /* Animation Durations */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 1000ms;
+
+  /* Animation Easing */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Animation Delays */
+  --delay-none: 0ms;
+  --delay-fast: 100ms;
+  --delay-normal: 200ms;
+  --delay-slow: 300ms;
+}
+
+@layer utilities {
+  /* Transition Duration */
+  .duration-instant { transition-duration: var(--duration-instant); }
+  .duration-fast { transition-duration: var(--duration-fast); }
+  .duration-normal { transition-duration: var(--duration-normal); }
+  .duration-slow { transition-duration: var(--duration-slow); }
+  .duration-slower { transition-duration: var(--duration-slower); }
+
+  /* Transition Timing */
+  .ease-linear { transition-timing-function: var(--ease-linear); }
+  .ease-in { transition-timing-function: var(--ease-in); }
+  .ease-out { transition-timing-function: var(--ease-out); }
+  .ease-in-out { transition-timing-function: var(--ease-in-out); }
+
+  /* Animation Delay */
+  .delay-none { animation-delay: var(--delay-none); }
+  .delay-fast { animation-delay: var(--delay-fast); }
+  .delay-normal { animation-delay: var(--delay-normal); }
+  .delay-slow { animation-delay: var(--delay-slow); }
+} 

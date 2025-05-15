@@ -1,0 +1,15 @@
+@theme {
+  --aspect-auto: auto;
+  --aspect-square: 1;
+  --aspect-video: calc(16 / 9);
+  --aspect-portrait: calc(3 / 4);
+  --aspect-landscape: calc(4 / 3);
+}
+
+@layer utilities {
+  .aspect-auto { aspect-ratio: var(--aspect-auto); }
+  .aspect-square { aspect-ratio: var(--aspect-square); }
+  .aspect-video { aspect-ratio: var(--aspect-video); }
+  .aspect-portrait { aspect-ratio: var(--aspect-portrait); }
+  .aspect-landscape { aspect-ratio: var(--aspect-landscape); }
+} 

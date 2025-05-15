@@ -1,0 +1,28 @@
+/* @import "tailwindcss"; */
+
+/* Base Tokens */
+@import "./tokens/_colors.css";
+@import "./tokens/_typography.css";
+@import "./tokens/_spacing.css";
+@import "./tokens/_borders.css";
+@import "./tokens/_animations.css";
+@import "./tokens/_breakpoints.css";
+
+/* Layout Tokens */
+@import "./tokens/_layout.css";
+@import "./tokens/_grid.css";
+
+/* Component Tokens */
+@import "./tokens/_shadows.css";
+@import "./tokens/_z-index.css";
+@import "./tokens/_opacity.css";
+@import "./tokens/_aspect-ratio.css";
+
+/* Utility Classes */
+@import "./tokens/_utilities.css";
+
+/* Component Styles */
+@import "./tokens/_components.css";
+
+
+@import "./tokens//_transitions.css";

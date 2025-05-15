@@ -1,0 +1,11 @@
+.gridContainer {
+    display: grid;
+    gap: 1.5rem; /* same as gap-6 */
+    /* 
+      auto-fit as many 300px-wide columns as will fit 
+      and stretch them (via 1fr) to fill any leftover space.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: start; /* left-align any extra space */
+  }
+  
